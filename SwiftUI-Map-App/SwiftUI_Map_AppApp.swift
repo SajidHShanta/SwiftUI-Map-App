@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct SwiftUI_Map_AppApp: App {
+    //Correction: Next time I won't start the app name with the app suffix
     var body: some Scene {
         WindowGroup {
             ContentView()

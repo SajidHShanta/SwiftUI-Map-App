@@ -10,6 +10,7 @@
 		FFD2662129350F2100F01B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD2662029350F2100F01B54 /* Assets.xcassets */; };
 		FFD266242935172500F01B54 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD266232935172500F01B54 /* Location.swift */; };
 		FFD26627293519C000F01B54 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD26626293519C000F01B54 /* LocationsDataService.swift */; };
+		FFD2662A2936224F00F01B54 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD266292936224F00F01B54 /* LocationsView.swift */; };
 		FFF15F1D2935056A00D599A2 /* SwiftUI_Map_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF15F1C2935056A00D599A2 /* SwiftUI_Map_AppApp.swift */; };
 		FFF15F1F2935056A00D599A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF15F1E2935056A00D599A2 /* ContentView.swift */; };
 		FFF15F242935056C00D599A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF15F232935056C00D599A2 /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		FFD2662029350F2100F01B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFD266232935172500F01B54 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		FFD26626293519C000F01B54 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		FFD266292936224F00F01B54 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		FFF15F192935056A00D599A2 /* SwiftUI-Map-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Map-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF15F1C2935056A00D599A2 /* SwiftUI_Map_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Map_AppApp.swift; sourceTree = "<group>"; };
 		FFF15F1E2935056A00D599A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,21 @@
 			path = DataServices;
 			sourceTree = "<group>";
 		};
+		FFD266282936223500F01B54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFD266292936224F00F01B54 /* LocationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFD2662B2936227900F01B54 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		FFF15F102935056A00D599A2 = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +88,11 @@
 		FFF15F1B2935056A00D599A2 /* SwiftUI-Map-App */ = {
 			isa = PBXGroup;
 			children = (
-				FFD26625293519B200F01B54 /* DataServices */,
 				FFF15F1C2935056A00D599A2 /* SwiftUI_Map_AppApp.swift */,
 				FFF15F1E2935056A00D599A2 /* ContentView.swift */,
+				FFD26625293519B200F01B54 /* DataServices */,
+				FFD266282936223500F01B54 /* Views */,
+				FFD2662B2936227900F01B54 /* ViewModels */,
 				FFD26622293516E800F01B54 /* Models */,
 				FFD2662029350F2100F01B54 /* Assets.xcassets */,
 				FFF15F222935056C00D599A2 /* Preview Content */,
@@ -161,6 +180,7 @@
 			files = (
 				FFD26627293519C000F01B54 /* LocationsDataService.swift in Sources */,
 				FFF15F1F2935056A00D599A2 /* ContentView.swift in Sources */,
+				FFD2662A2936224F00F01B54 /* LocationsView.swift in Sources */,
 				FFD266242935172500F01B54 /* Location.swift in Sources */,
 				FFF15F1D2935056A00D599A2 /* SwiftUI_Map_AppApp.swift in Sources */,
 			);
