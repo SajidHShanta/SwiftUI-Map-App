@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF072CF4293B6F2500FD2210 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF072CF3293B6F2500FD2210 /* LocationsViewModel.swift */; };
 		FFD2662129350F2100F01B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD2662029350F2100F01B54 /* Assets.xcassets */; };
 		FFD266242935172500F01B54 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD266232935172500F01B54 /* Location.swift */; };
 		FFD26627293519C000F01B54 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD26626293519C000F01B54 /* LocationsDataService.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF072CF3293B6F2500FD2210 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		FFD2662029350F2100F01B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFD266232935172500F01B54 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		FFD26626293519C000F01B54 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		FFD2662B2936227900F01B54 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FF072CF3293B6F2500FD2210 /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD26627293519C000F01B54 /* LocationsDataService.swift in Sources */,
+				FF072CF4293B6F2500FD2210 /* LocationsViewModel.swift in Sources */,
 				FFF15F1F2935056A00D599A2 /* ContentView.swift in Sources */,
 				FFD2662A2936224F00F01B54 /* LocationsView.swift in Sources */,
 				FFD266242935172500F01B54 /* Location.swift in Sources */,
