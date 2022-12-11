@@ -29,6 +29,8 @@ struct LocationDetailView: View {
             }
         }
         .ignoresSafeArea()
+        .background(.ultraThinMaterial)
+        .overlay(backButton, alignment: .topLeading)
     }
 }
 
@@ -92,5 +94,22 @@ extension LocationDetailView {
         })
             .aspectRatio(1, contentMode: .fit)
             .allowsHitTesting(false) //disable gesture on map
+            .cornerRadius(30)
+    }
+    
+    private var backButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "xmark")
+                .font(.headline)
+                .padding(16)
+                .foregroundColor(.primary)
+                .background(.thinMaterial)
+                .cornerRadius(10)
+                .shadow(radius: 4)
+                .padding()
+        }
+
     }
 }

@@ -17,23 +17,7 @@ struct LocationsView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.mapRegion,
-                annotationItems: vm.locations,
-                annotationContent: { location in
-                
-                //default map pin
-//                MapMarker(coordinate: location.coordinates, tint: .red)
-                
-                //customized map pin
-                MapAnnotation(coordinate: location.coordinates) {
-                    MapAnnotationView()
-                        .shadow(color: .black.opacity(0.3), radius: 10)
-                        .scaleEffect(location == vm.mapLocation ? 1 : 0.8)
-                        .onTapGesture {
-                            vm.showNextLocation(location: location)
-                        }
-                }
-            })
+            mapLayer
                 .ignoresSafeArea()
             
             VStack {
@@ -92,5 +76,25 @@ extension LocationsView {
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)
+    }
+    
+    private var mapLayer: some View {
+        Map(coordinateRegion: $vm.mapRegion,
+            annotationItems: vm.locations,
+            annotationContent: { location in
+            
+            //default map pin
+//                MapMarker(coordinate: location.coordinates, tint: .red)
+            
+            //customized map pin
+            MapAnnotation(coordinate: location.coordinates) {
+                MapAnnotationView()
+                    .shadow(color: .black.opacity(0.3), radius: 10)
+                    .scaleEffect(location == vm.mapLocation ? 1 : 0.8)
+                    .onTapGesture {
+                        vm.showNextLocation(location: location)
+                    }
+            }
+        })
     }
 }
