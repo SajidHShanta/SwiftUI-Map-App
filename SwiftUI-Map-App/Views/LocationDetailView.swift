@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct LocationDetailView: View {
+    @EnvironmentObject private var vm: LocationsViewModel
     let location: Location
     
     var body: some View {
@@ -37,6 +38,7 @@ struct LocationDetailView: View {
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         LocationDetailView(location: LocationsDataService.locations.first!)
+            .environmentObject(LocationsViewModel())
     }
 }
 
@@ -99,7 +101,7 @@ extension LocationDetailView {
     
     private var backButton: some View {
         Button {
-            
+            vm.sheetLocation = nil
         } label: {
             Image(systemName: "xmark")
                 .font(.headline)
