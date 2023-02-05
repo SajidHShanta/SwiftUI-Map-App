@@ -88,7 +88,7 @@ extension LocationDetailView {
             annotationItems: [location],
             annotationContent: { location in
             MapAnnotation(coordinate: location.coordinates) {
-                MapAnnotationView()
+                MapAnnotationView(location: location)
                     .shadow(color: .black.opacity(0.3), radius: 10)
             }
         })
